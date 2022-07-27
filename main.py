@@ -10,11 +10,11 @@ net_connect = ConnectHandler(
 )
 
 output = net_connect.send_command(
-    "show version", use_textfsm=True
+    "show ip interface brief", use_textfsm=True
 )
 pprint(output)
 data = json.dumps(output)
 
-with open("show_version.txt", "+a") as f:
+with open("show_interface_brief.txt", "+a") as f:
     f.writelines(data)
     f.close()
