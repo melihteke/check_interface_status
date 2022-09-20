@@ -4,7 +4,7 @@ import json
 
 net_connect = ConnectHandler(
     device_type="cisco_xe",
-    host="192.168.178.2",
+    host="192.168.178.1",
     username="jenkins",
     password="jenkins",
 )
