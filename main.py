@@ -15,6 +15,6 @@ output = net_connect.send_command(
 pprint(output)
 data = json.dumps(output)
 
-with open("show_interface_brief2.txt", "+a") as f:
+with open("show_interface_brief.txt", "+a") as f:
     f.writelines(data)
     f.close()
